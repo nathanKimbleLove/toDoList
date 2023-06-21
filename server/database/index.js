@@ -6,12 +6,12 @@ const pool = new Pool({
   user: process.env.PGUSER,
   host: process.env.PGHOST,
   database: process.env.PGDATABASE,
-  password: process.env.PGPASSWORD,
+  // password: process.env.PGPASSWORD,
   port: process.env.PGPORT,
 })
 pool
   .connect()
-  .then(a => console.log('connected'))
+  .then(a => console.log('connected to database!'))
   .catch(err => console.error('connection error', err.stack));
 
 module.exports = pool;

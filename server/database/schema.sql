@@ -35,7 +35,7 @@ CREATE TABLE IF NOT EXISTS tasks (
   "due" TIMESTAMP NULL DEFAULT NULL,
   "modified" TIMESTAMP NULL DEFAULT NULL,
   "priority" INTEGER DEFAULT NULL,
-  PRIMARY KEY ("id"),
+  PRIMARY KEY ("id")
 );
 
 -- ---
